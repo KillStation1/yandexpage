@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "YandexSansText-Thin";
+    src: url('../fonts/YandexSansText-Thin.woff2') format('woff2'),
+    url('../fonts/YandexSansText-Thin.woff') format('woff'),
+    url('../fonts/YandexSansText-Thin.tff') format('truetype');
+    font-weight:normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "YandexSansText-Thin", sans-serif;
+    margin: 0;
+    background: linear-gradient(blue, pink);
+}
+header{
+    background: white;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    display: block;
+    text-decoration: none;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+.logo{
+    padding: 10px 20px;
+    height: 70px;
+}
+nav {
+    display: table;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.topmenu::after {
+    display: table;
+    clear: both;
+}
+.topmenu > li {
+    width: 16%;
+    float: left;
+    position: relative;
+}
+.topmenu > li > a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #404040;
+    padding: 10px 20px;
+}
+.topmenu li a:hover {
+    color: pink;
+}
+.submenu-link:after {
+    content: "\f107";
+    color: inherit;
+    margin-left: 7px;
+}
+.submenu {
+    background: #273037;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 150px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+}
+.submenu a {
+    color: white;
+    text-align: left;
+    padding: 10px 13px;
+    font-size: 10px;
+    border-bottom:1px solid
+ rgba(255,255,255,.1);
+}
+.submenu li::after last-child a {border-bottom: none;}
+.topmenu > li:hover .submenu{
+    opacity: 1;
+    transform: scaleY(1);
+}
+main {
+    width: 80%;
+    height: 914px;
+    text-align: center;
+    margin: 3px 0px 3px 205px;
+    padding: 20px;
+    background: white;
+}
+footer {
+    padding: 7px 20px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+div.container {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.container p {
+    margin: 0;
+}

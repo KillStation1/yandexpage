@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "YandexSansText-Thin";
+    src: url('../fonts/YandexSansText-Thin.woff2') format('woff2'),
+    url('../fonts/YandexSansText-Thin.woff') format('woff'),
+    url('../fonts/YandexSansText-Thin.tff') format('truetype');
+    font-weight:normal;
+    font-style: normal;
+}
+html, body {
+    margin: 0;
+}
+body {
+    font-family: "YandexSansText-Thin", sans-serif;
+    background: linear-gradient(blue, pink);
+}
+header {
+    background: white;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+header a {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+.logo {
+    padding: 10px 20px;
+    height: 70px;
+}
+nav {
+    display: table;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.topmenu::after {
+    display: table;
+    clear: both;
+}
+.topmenu > li {
+    width: 16%;
+    float: left;
+    position: relative;
+}
+.topmenu > li > a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #404040;
+    padding: 10px 20px;
+}
+.topmenu li a:hover {
+    color: pink;
+}
+main {
+    width: 80%;
+    height: 1435px;
+    text-align: justify;
+    margin: 3px 0px 3px 195px;
+    padding: 3px;
+}
+footer {
+    padding: 7px 20px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    color: aliceblue; 
+    font-size: 35px; 
+    background: linear-gradient(135deg, #00ffee , #ff00c8 ); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.img_ya_nei {
+    width: 13%;
+    height: 100%;
+    margin: 0px 0px -5px -350px;
+}
+.img_ya_nei_2 {
+    width: 15%;
+    height: 100%;
+    margin: -305px 0px 15px 290px;
+}
+section {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+div {
+    text-align: center;
+}
